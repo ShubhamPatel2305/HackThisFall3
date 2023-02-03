@@ -1,12 +1,7 @@
 //SPDX-License-Identifier: MIT
-pragma solidity >=0.7.0<0.9.0;
+pragma solidity >=0.7.0 <0.9.0;
 
 contract ChatDApp{
-
-    address owner;
-    constructor() public{
-        owner=msg.sender;
-    }
 
     struct user{
         string name;
@@ -109,7 +104,6 @@ contract ChatDApp{
     }
 
     function getAllUsersLive() public view returns(allUsers[] memory){
-        require(msg.sender==owner,"Only owner can access this list");
         return getAllUsers;
     }
 }
