@@ -1,5 +1,5 @@
 import React from 'react'
-import Style from './filter.module.css'
+import Style from './friend.module.css'
 
 const friend = () => {
   return (
